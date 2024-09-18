@@ -25,3 +25,9 @@ With orthophotos and their labeled rasterized vectors now available, we can proc
 
 _Dataset Pre-processing_
 
+The orthophotos are in .tif file format and can be loaded and read using the rasterio library. Once loaded, the orthophoto image can be converted into a NumPy array for further processing. Since the orthophoto contains RGB values ranging from 0 to 255, these pixel values must be normalized to a range of 0 to 1 to prepare the data for training a CNN effectively.
+Rasterized vector data does not need to be normalized, as each pixel represents a class label rather than a continuous value. These class labels are used for training the CNN to identify different features, so modifying the pixel values could lead to incorrect training. The pixel values in the rasterized vector layer should remain categorical, with each class corresponding to a specific feature (e.g., buildings, roads, waterbodies, etc).
+
+_Model Building_
+
+We are now training multiple CNN models, each with different configurations and layers, to identify the optimal model that can accurately detect features in high-resolution drone orthophotos. This process involves experimenting with various architectures to balance accuracy and computational efficiency, ensuring the model is well-suited for feature extraction tasks.
