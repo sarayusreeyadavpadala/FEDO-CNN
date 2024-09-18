@@ -32,4 +32,4 @@ Rasterized vector data does not need to be normalized, as each pixel represents 
 
 _Model Building_
 
-We are now training multiple CNN models, each with different configurations and layers, to identify the optimal model that can accurately detect features in high-resolution drone orthophotos. This process involves experimenting with various architectures to balance accuracy and computational efficiency, ensuring the model is well-suited for feature extraction tasks.
+We are now training Spectral Spatial CNN model, each with different configurations and layers, to identify the optimal model that can accurately detect features in high-resolution drone orthophotos. This process involves experimenting with various architectures to balance accuracy and computational efficiency, ensuring the model is well-suited for feature extraction tasks.
