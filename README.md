@@ -24,7 +24,7 @@ We will repeat the above process for each dataset provided to us and organize th
 
 With orthophotos and their labeled rasterized vectors now available, we can proceed with using the orthophoto (raster) as the input image and the rasterized vector image as it's label.
 
--> Ensuring same CRS and pixel size of all orthophotos and its labels (rasterized vectors). (used warp reproject and translate process in QGIS)
+-> Ensuring same CRS, number of bands and pixel size of all orthophotos and its labels (rasterized vectors). (used warp reproject and translate process in QGIS)
 
 _Dataset Pre-processing_
 
