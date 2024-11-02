@@ -24,6 +24,8 @@ We will repeat the above process for each dataset provided to us and organize th
 
 With orthophotos and their labeled rasterized vectors now available, we can proceed with using the orthophoto (raster) as the input image and the rasterized vector image as it's label.
 
+-> Ensuring same CRS and pixel size of all orthophotos and its labels (rasterized vectors). (used warp project and translate process in QGIS)
+
 _Dataset Pre-processing_
 
 The orthophotos are in .tif file format and can be loaded and read using the rasterio library. Once loaded, the orthophoto image can be converted into a NumPy array for further processing. Since the orthophoto contains RGB values ranging from 0 to 255, these pixel values must be normalized to a range of 0 to 1 to prepare the data for training a CNN effectively.
